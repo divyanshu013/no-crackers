@@ -20,9 +20,11 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
-    "react-emotion": "^9.2.12"
+    "react-emotion": "^9.2.12",
+    "react-feather": "^1.1.4"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "babel-plugin-emotion": "^9.2.11",
     "eslint": "^5.8.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -31,6 +33,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^0.0.0",
     "prettier": "^1.14.3"
   }
 }

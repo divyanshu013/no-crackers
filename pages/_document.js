@@ -21,6 +21,10 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
+          <link
+            href="https://fonts.googleapis.com/css?family=Lato|Rubik"
+            rel="stylesheet"
+          />
           <style
             // eslint-disable-next-line
             dangerouslySetInnerHTML={{ __html: this.props.css }}

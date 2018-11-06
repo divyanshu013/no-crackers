@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const facts = [
   <div>
     <span css={{ borderBottom: '1px solid white' }}>Noise</span> levels can go
-    as high as 120db during diwali -{' '}
+    as high as 120db (above 80 db can damage hearing ) during diwali. Dogs can hear 4 times more than us, imagine the pain and agony -{' '}
     <a
       target="_blank"
       rel="noopener noreferrer"
@@ -21,15 +21,14 @@ const facts = [
   </div>,
   <div>
     <span css={{ borderBottom: '1px solid white' }}>Child Labor</span>:
-    According to its findings, around 90 per cent of children employed in
-    fireworks were found to have contracted asthma, eye disease and TB. -{' '}
-    <a href="https://www.indiatoday.in/india/story/india-today-investigation-diwali-firecrackers-children-work-illegal-factories-347409-2016-10-19">
+    More than 1 lakh children are employed in fireworks factories, not just in Tamil Nadu, but across U.P, Andhra Pradesh, Orissa, Chattisgarh, Jaipur and Assam. Children wearing school uniforms were seen working in factories after school hours. -{' '}
+    <a href="http://www.sify.com/news/deepavali-fireworks-spare-a-thought-for-the-child-labour-news-columns-pljkVsacabeff.html">
       Source
     </a>
   </div>,
   <div>
     <span css={{ borderBottom: '1px solid white' }}>Air Pollution</span>: During
-    the festival day, the average concentration of PM10 was increased 35 times
+    the festival day, the avg. concentration of PM10 was increased 35 times
     compared with a normal day before Diwali. Similarly, concentration of SO2
     has increased 23 times and NOx has increased 3 times on the festival day -{' '}
     <a href="http://www.bioline.org.br/pdf?st15128">Source</a>
@@ -45,6 +44,12 @@ const facts = [
       Source
     </a>
   </div>,
+  <div>
+    <span css={{ borderBottom: '1px solid white' }}>Garbage:</span> The roads are filled with bits of paper and plastic. Approximately 4,000 additional metric tonnes of garbage are released in Delhi alone, and twice the amount in Mumbai” -{' '}
+    <a href="https://www.youthkiawaaz.com/2015/11/diwali-negative-effect-of-firecrackers/">
+    Source
+    </a>
+  </div>
 ];
 
 const Facts = () => {
@@ -52,7 +57,7 @@ const Facts = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((index + 1) % facts.length);
-    }, 10000);
+    }, 12000);
     return () => {
       clearInterval(interval);
     };
@@ -75,3 +80,5 @@ const Facts = () => {
 };
 
 export default Facts;
+
+

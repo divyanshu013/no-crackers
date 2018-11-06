@@ -4,7 +4,10 @@
   "description": "No crackers please",
   "main": "index.js",
   "repository": "git@github.com:divyanshu013/no-crackers.git",
-  "author": "Divyanshu Maithani <div.blackcat@gmail.com>",
+  "authors": [
+    "Divyanshu Maithani <div.blackcat@gmail.com>",
+    "Sagar Karira <sagarkarira1992@gmail.com>"
+  ],
   "license": "MIT",
   "private": false,
   "scripts": {

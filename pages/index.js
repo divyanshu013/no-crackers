@@ -26,6 +26,11 @@ const App = () => {
       return 1;
     });
   };
+  const message =
+    count !== null
+      ? `I pledge for green diwali along with ${count} people. Join me! #NoCrackers https://no-crackers.netlify.com`
+      : 'I pledge for green diwali. Join me #NoCrackers https://no-crackers.netlify.com';
+  const hidePledgeButton = isPledged === 'y' ? true : !isVisible;
   return (
     <Main>
       <div
@@ -50,7 +55,7 @@ const App = () => {
         )}
         {count && (
           <ParticleButton
-            hidden={!isVisible}
+            hidden={hidePledgeButton}
             type="triangle"
             size={8}
             color="#eee"
@@ -65,21 +70,42 @@ const App = () => {
             </div>
           </ParticleButton>
         )}
+        {isPledged === 'y' && (
+          <div css={{ textAlign: 'center' }}>
+            Thanks for joining! Spread the word...
+          </div>
+        )}
         <div
           css={{
             display: 'grid',
             gridGap: 16,
             marginTop: 24,
             gridAutoFlow: 'column',
+            a: {
+              outline: 'none',
+              border: 'none',
+            },
             [mediaMax.small]: {
               gridAutoFlow: 'row',
             },
           }}
         >
-          <AwesomeButtonSocial type="twitter">
+          <AwesomeButtonSocial
+            type="twitter"
+            target="_blank"
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+              message,
+            )}`}
+          >
             Share on Twitter
           </AwesomeButtonSocial>
-          <AwesomeButtonSocial type="facebook">
+          <AwesomeButtonSocial
+            type="facebook"
+            target="_blank"
+            href={` http://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+              'https://no-crackers.netlify.com',
+            )}&quote=${encodeURIComponent(message)}`}
+          >
             Share on Facebook
           </AwesomeButtonSocial>
         </div>

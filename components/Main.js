@@ -18,6 +18,7 @@ injectGlobal`
     background-repeat: no-repeat;
     color: #424242;
     box-sizing: border-box;
+    height: 100vh;
   }
   h1 {
     font-family: 'Bungee Shade', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

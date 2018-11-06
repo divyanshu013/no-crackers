@@ -2,6 +2,7 @@ import React from 'react';
 import { hydrate, injectGlobal } from 'react-emotion';
 import Head from 'next/head';
 import { node } from 'prop-types';
+import { mediaMax } from '@divyanshu013/media';
 
 // Adds server generated styles to emotion cache.
 // '__NEXT_DATA__.ids' is set in '_document.js'
@@ -19,7 +20,20 @@ injectGlobal`
     color: white;
   }
   h1 {
+    font-family: 'Bungee Shade', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 6rem;
+    color: #000;
+    ${mediaMax.medium} {
+      font-size: 3rem;
+    };
+  }
+  h2 {
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  a, a:visited, a:focus, a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed white;
   }
 `;
 

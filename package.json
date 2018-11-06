@@ -14,14 +14,17 @@
   },
   "dependencies": {
     "@divyanshu013/media": "^1.0.0",
+    "@zeit/next-css": "^1.0.1",
     "emotion": "^9.2.12",
     "emotion-server": "^9.2.12",
+    "firebase": "^5.5.7",
     "next": "^7.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.0",
+    "react-awesome-button": "^5.0.0",
     "react-dom": "^16.7.0-alpha.0",
     "react-emotion": "^9.2.12",
-    "react-feather": "^1.1.4"
+    "react-particle-effect-button": "^1.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

@@ -22,8 +22,26 @@ const useFirebase = () => {
       // catches firebase duplicate app
     }
     return null;
-  });
+  }, []);
   return [count, setCount, event];
 };
 
-export default useFirebase;
+const useLocalStorage = () => {
+  const [isPledged, setStorage] = useState(null);
+  useEffect(() => {
+    const isPledgedLocal = localStorage.getItem('isPledged');
+    if (!isPledgedLocal) {
+      localStorage.setItem('isPledged', 'n');
+      setStorage('n');
+    } else {
+      setStorage(isPledgedLocal);
+    }
+  }, []);
+  const setIsPledged = value => {
+    localStorage.setItem('isPledged', value);
+    setStorage(value);
+  };
+  return [isPledged, setIsPledged];
+};
+
+export { useFirebase, useLocalStorage };

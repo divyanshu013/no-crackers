@@ -8,17 +8,19 @@ import { mediaMax } from '@divyanshu013/media';
 
 import Main from '../components/Main';
 import Facts from '../components/Facts';
-import useFirebase from '../hooks';
+import { useFirebase, useLocalStorage } from '../hooks';
 
 const App = () => {
   const [isVisible, toggleVisibility] = useState(true);
   const [count, setCount, firebaseEvent] = useFirebase();
+  const [isPledged, setIsPledged] = useLocalStorage();
   const handleSubmit = () => {
     toggleVisibility(false);
     firebaseEvent.transaction(value => {
       // firebase is weird
       if (value) {
         setCount(count + 1);
+        setIsPledged('y');
         return value + 1;
       }
       return 1;
@@ -46,21 +48,23 @@ const App = () => {
             {count} People have joined
           </h2>
         )}
-        <ParticleButton
-          hidden={!isVisible}
-          type="triangle"
-          size={8}
-          color="#1e88e5"
-        >
-          <div
-            role="button"
-            tabIndex="0"
-            onClick={handleSubmit}
-            onKeyPress={handleSubmit}
+        {count && (
+          <ParticleButton
+            hidden={!isVisible}
+            type="triangle"
+            size={8}
+            color="#eee"
           >
-            <AwesomeButton>Join the Pledge</AwesomeButton>
-          </div>
-        </ParticleButton>
+            <div
+              role="button"
+              tabIndex="0"
+              onClick={handleSubmit}
+              onKeyPress={handleSubmit}
+            >
+              <AwesomeButton>Join the Pledge</AwesomeButton>
+            </div>
+          </ParticleButton>
+        )}
         <div
           css={{
             display: 'grid',

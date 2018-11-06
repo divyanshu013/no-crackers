@@ -55,6 +55,36 @@ const App = () => {
             Share on Facebook
           </AwesomeButtonSocial>
         </div>
+        <div css={{ marginTop: 80 }}>
+          With{' '}
+          <span role="img" aria-label="love">
+            💙
+          </span>{' '}
+          from{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/divyanshu013"
+          >
+            @divyanshu013
+          </a>{' '}
+          and{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/ekrysis"
+          >
+            @ekrysis
+          </a>
+          . 🌟 on{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/divyanshu013/no-crackers"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </Main>
   );

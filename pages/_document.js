@@ -23,6 +23,10 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta property="og:title" content="No Crackers" />
+          <meta
+            property="og:description"
+            content="Join the No Crackers pledge. Help spread the word!"
+          />
           <meta property="og:url" content="https://no-crackers.netlify.com" />
           <meta
             property="og:image"

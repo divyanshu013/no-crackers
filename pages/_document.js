@@ -22,6 +22,12 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta property="og:title" content="No Crackers" />
+          <meta property="og:url" content="https://no-crackers.netlify.com" />
+          <meta
+            property="og:image"
+            content="https://no-crackers.netlify.com/static/logo.png"
+          />
           <link
             href="https://fonts.googleapis.com/css?family=Lato|Rubik|Bungee+Shade"
             rel="stylesheet"

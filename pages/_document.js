@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://no-crackers.netlify.com" />
           <meta
             property="og:image"
-            content="https://no-crackers.netlify.com/static/logo.png"
+            content="https://no-crackers.netlify.com/static/og.png"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Lato|Rubik|Bungee+Shade"

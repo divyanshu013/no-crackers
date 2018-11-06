@@ -12,7 +12,18 @@ import useFirebase from '../hooks';
 
 const App = () => {
   const [isVisible, toggleVisibility] = useState(true);
-  const count = useFirebase();
+  const [count, setCount, firebaseEvent] = useFirebase();
+  const handleSubmit = () => {
+    toggleVisibility(false);
+    firebaseEvent.transaction(value => {
+      // firebase is weird
+      if (value) {
+        setCount(count + 1);
+        return value + 1;
+      }
+      return 1;
+    });
+  };
   return (
     <Main>
       <div
@@ -35,12 +46,17 @@ const App = () => {
             {count} People have joined
           </h2>
         )}
-        <ParticleButton hidden={!isVisible}>
+        <ParticleButton
+          hidden={!isVisible}
+          type="triangle"
+          size={8}
+          color="#1e88e5"
+        >
           <div
             role="button"
             tabIndex="0"
-            onClick={() => toggleVisibility(false)}
-            onKeyPress={() => toggleVisibility(false)}
+            onClick={handleSubmit}
+            onKeyPress={handleSubmit}
           >
             <AwesomeButton>Join the Pledge</AwesomeButton>
           </div>

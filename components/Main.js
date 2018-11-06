@@ -14,15 +14,15 @@ if (typeof window !== 'undefined') {
 injectGlobal`
   body {
     font-family: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background: #c31432;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    background-repeat: no-repeat;
+    color: #424242;
+    box-sizing: border-box;
   }
   h1 {
     font-family: 'Bungee Shade', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 6rem;
-    color: #000;
+    color: #222;
     ${mediaMax.medium} {
       font-size: 3rem;
     };
@@ -31,9 +31,9 @@ injectGlobal`
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   a, a:visited, a:focus, a:hover {
-    color: white;
+    color: #424242;
     text-decoration: none;
-    border-bottom: 1px dashed white;
+    border-bottom: 1px dashed #424242;
   }
 `;
 

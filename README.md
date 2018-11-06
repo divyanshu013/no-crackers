@@ -1,5 +1,7 @@
 # No Crackers 🚫🧨
 
+![](static/logo.png)
+
 ## Development
 
 1. Please use `node >= 10` and `yarn`

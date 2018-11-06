@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 const facts = [
   <div>
-    <span css={{ borderBottom: '1px solid white' }}>Noise</span> levels can go
-    as high as 120db (above 80 db can damage hearing ) during diwali. Dogs can hear 4 times more than us, imagine the pain and agony -{' '}
+    <span css={{ borderBottom: '1px solid #666' }}>Noise</span> levels can go as
+    high as 120db (above 80 db can damage hearing ) during diwali. Dogs can hear
+    4 times more than us, imagine the pain and agony -{' '}
     <a
       target="_blank"
       rel="noopener noreferrer"
@@ -13,28 +14,31 @@ const facts = [
     </a>
   </div>,
   <div>
-    <span css={{ borderBottom: '1px solid white' }}>Firecrackers injuries</span>
-    : Our centre received 0.81 patients per 100,000 population of Delhi national
+    <span css={{ borderBottom: '1px solid #666' }}>Firecrackers injuries</span>:
+    Our centre received 0.81 patients per 100,000 population of Delhi national
     capital region in the year 2002 and in the year 2010 this ratio rose to 1.51
     per 100,000 population -{' '}
     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3385409/">Source</a>
   </div>,
   <div>
-    <span css={{ borderBottom: '1px solid white' }}>Child Labor</span>:
-    More than 1 lakh children are employed in fireworks factories, not just in Tamil Nadu, but across U.P, Andhra Pradesh, Orissa, Chattisgarh, Jaipur and Assam. Children wearing school uniforms were seen working in factories after school hours. -{' '}
+    <span css={{ borderBottom: '1px solid #666' }}>Child Labor</span>: More than
+    1 lakh children are employed in fireworks factories, not just in Tamil Nadu,
+    but across U.P, Andhra Pradesh, Orissa, Chattisgarh, Jaipur and Assam.
+    Children wearing school uniforms were seen working in factories after school
+    hours. -{' '}
     <a href="http://www.sify.com/news/deepavali-fireworks-spare-a-thought-for-the-child-labour-news-columns-pljkVsacabeff.html">
       Source
     </a>
   </div>,
   <div>
-    <span css={{ borderBottom: '1px solid white' }}>Air Pollution</span>: During
+    <span css={{ borderBottom: '1px solid #666' }}>Air Pollution</span>: During
     the festival day, the avg. concentration of PM10 was increased 35 times
     compared with a normal day before Diwali. Similarly, concentration of SO2
     has increased 23 times and NOx has increased 3 times on the festival day -{' '}
     <a href="http://www.bioline.org.br/pdf?st15128">Source</a>
   </div>,
   <div>
-    <span css={{ borderBottom: '1px solid white' }}>Animals</span>: The team of
+    <span css={{ borderBottom: '1px solid #666' }}>Animals</span>: The team of
     Wildlife Rescue at Chawri Bazar said, “The number of cases of bird injuries
     rises by 60 per cent in Diwali. Nearly 40 per cent of these birds lose their
     eyesights and meet with accidents, 30 per cent get burn injuries due to
@@ -45,11 +49,14 @@ const facts = [
     </a>
   </div>,
   <div>
-    <span css={{ borderBottom: '1px solid white' }}>Garbage:</span> The roads are filled with bits of paper and plastic. Approximately 4,000 additional metric tonnes of garbage are released in Delhi alone, and twice the amount in Mumbai” -{' '}
+    <span css={{ borderBottom: '1px solid #666' }}>Garbage:</span> The roads are
+    filled with bits of paper and plastic. Approximately 4,000 additional metric
+    tonnes of garbage are released in Delhi alone, and twice the amount in
+    Mumbai” -{' '}
     <a href="https://www.youthkiawaaz.com/2015/11/diwali-negative-effect-of-firecrackers/">
-    Source
+      Source
     </a>
-  </div>
+  </div>,
 ];
 
 const Facts = () => {
@@ -65,7 +72,7 @@ const Facts = () => {
   return (
     <div
       css={{
-        border: '4px double white',
+        border: '4px double #666',
         borderRadius: 8,
         padding: '16px 24px',
         fontSize: '1.2rem',
@@ -80,5 +87,3 @@ const Facts = () => {
 };
 
 export default Facts;
-
-

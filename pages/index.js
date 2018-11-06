@@ -58,7 +58,7 @@ const App = () => {
             hidden={hidePledgeButton}
             type="triangle"
             size={8}
-            color="#eee"
+            color="#666"
           >
             <div
               role="button"
